@@ -1,0 +1,13 @@
+name: Pushspecificbranch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build-step
+        run: echo "A Demo Build"

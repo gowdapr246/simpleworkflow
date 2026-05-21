@@ -7,7 +7,7 @@ jobs:
   multishell:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello-step
+      - name: Multishell-step
         run: |
           echo "This is line one"
           echo "This is line two"

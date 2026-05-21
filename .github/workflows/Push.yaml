@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build-step
-        run: echo "A Demo Build"    
+        run: echo "Its an Push trigger "    

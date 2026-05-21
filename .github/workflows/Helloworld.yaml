@@ -1,9 +1,8 @@
+---
 name: Hello world
 on: workflow_dispatch
 jobs:
-  hello:
+  hello: null
   runs-on: ubuntu-latest
-  steps:
-  -name: Hello-step
-   run:echo "welcome to GHA"
-  
+  steps: null
+  -name: Hello-step run:echo "welcome to GHA"

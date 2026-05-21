@@ -1,0 +1,25 @@
+name: Parallel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build-step
+        run: echo "A Demo Build"
+
+  Test:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test-Phase
+        run: echo "Running test cases"
+
+  Deploy:
+    needs: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: echo "Deploy the app"
